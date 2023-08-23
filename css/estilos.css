@@ -1,0 +1,217 @@
+/* reset de html */
+*html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+
+     }
+html{
+    font-size: 62,5%;
+
+
+    }
+body{ 
+    background-color: floralwhite;
+
+
+    } 
+
+
+  header nav ul .cinco{ 
+        background-color: black;
+        color: beige ;
+        font-size: 20px;
+        position: sticky;
+        top: 0px;
+        } 
+
+       /* .clase-padre{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap  ;
+            justify-content: center;
+           
+           
+            text-align: center;
+            font-size: 50px;
+            color: beige;
+            width: 100px;
+            height: 400px;
+            background-color: black;
+            border: 1px solid floralwhite;
+        
+            
+          
+        
+            } */
+         
+    ul li{ 
+        background-color: black;
+        display: inline-block;
+        padding-left: 50px; 
+        margin: 20px 0px;
+        border: 1px;
+        
+
+        }
+        .imagenes-poss-fiat-jeep{ 
+           
+            width: 1200px ;
+            height: 800;
+            }
+
+    .home-fondo-blanco { 
+        background-color: white;
+        width: 1200px ;
+        height: 1000;
+        }
+    .siete {
+            font-weight: bold;
+            color:red;
+            text-decoration: underline;
+             font-size: 15px;
+            text-align: center;
+            position:relative;
+            bottom:55px;
+         }
+
+h1{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+#tres{
+    text-align: center;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+#servicios  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+   
+h2{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+
+#imagenservicios img{ 
+      width: 1250px;
+      height: 500px;
+        }
+
+.imagenes-galeria img{
+    width: 600px;
+    height: 450px;
+    margin: 20px 10px;
+    padding: 20px;
+    border: dotted 2px red;
+    display: block;
+
+    }
+
+.texto {   
+    font-size: 12px;
+    height: 300px;
+    overflow: auto;
+    }
+ .toda-la-galeria{ 
+    background-color: grey;  
+        }
+
+#bordes-form{ 
+    padding: 200px;
+
+        }
+
+        .contenedor-grid{
+            display: grid;
+            height: 200px;
+            
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 50% 50$ ;
+        }
+        .hijo-uno{
+            font-weight: bold
+        }
+        .hijo-dos{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .hijo-tres{
+            
+
+        }
+        .hijo-cuatro{
+            
+
+        }
+
+        .classe-p{
+            height: 50px;
+        }
+       
+        /*celular*/
+        .img-tres , .img-cuatro {
+            display: none;
+        }
+         main #galeria {
+            height: 50vh ;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat (3, 10%);
+            gap: 2rem;
+            margin: 3rem 2rem 3rem 2rem;
+
+        }
+        main .galeria {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        } 
+             /*mq de tablet*/
+        @media screen and (min-width: 600px) {
+            #galeria {
+                grid-template-columns: (2, 1fr);
+                grid-template-rows: (2, 50%);
+               
+            
+        }
+        main .img-uno{
+         grid-column: span 2;
+        }
+        
+         /*mq de desktop*/
+             @media screen and (min-width: 1024px) {
+               #galeria  .img-tres, .img-cuatro {
+                display: block;
+
+               }
+               #galeria {
+                grid-template-columns: (3, 1fr);
+                grid-template-rows: 40% 30% 30%;
+                   
+                        }
+        main .img-uno .img-cinco {
+            grid-column: span 3;
+        } 
+                
+            /*          {}        */   
+
+        }
+
+        div .carousel-inner {
+            height: 500px;
+            width: 500px;
+        }
+        div .carousel-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
